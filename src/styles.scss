@@ -1,0 +1,56 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'assets/styles/variables';
+@import 'assets/styles/colors';
+@import 'assets/styles/fonts';
+@import 'assets/styles/helpers';
+
+html, body, #root {
+    height: 100%;
+}
+
+// global styles
+body {
+    font-family: 'Montserrat', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+input {
+    cursor: inherit;    
+}
+
+form {
+    input {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buckets-logo-6x {
+    width: $img-6x;
+    margin: 0 auto;
+    display: block;
+}
+
+// buttons
+.btn-rounded-green {
+    height: 36px;
+    border-radius: 30px;
+    min-width: 100px;
+    border: 0;
+    background: #0eee73;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(135deg, $primary-green 0%, $vibrant-green 100%);
+    display: inline-block;
+}

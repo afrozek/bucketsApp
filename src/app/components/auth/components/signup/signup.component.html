@@ -1,0 +1,48 @@
+<div id="signup-page">
+
+
+    <div *ngIf="!showConfirmCodeForm" id="auth-form" class="floating-form-container">
+      <h1>Sign Up</h1>
+      <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)" >
+        <input ngModel name="email" type="text" placeholder="email" />
+        <input ngModel name="password" type="password" placeholder="password"/>
+        <input ngModel name="confirmPassword" type="password" placeholder="password"/>
+        <div class="text-center">
+            <button class="btn-rounded-green" type="submit">{{signupButtonText}}</button>
+        </div>
+        <div class="text-danger text-center m-t-10 form-error-message">{{signupErrorText}}</div>
+      </form>
+
+      <div class="text-center">
+        <a [routerLink]="['/login']">Login</a>
+      </div>      
+    </div>
+    <div id="forgot">
+      <a href="">Forgot Username or Password?</a>
+    </div>
+
+
+
+    <div *ngIf="showConfirmCodeForm" id="auth-form" class="floating-form-container">
+        <h1>Confirm Code</h1>
+        <form #confirmCodeForm="ngForm" (ngSubmit)="onSubmitConfirmCode(confirmCodeForm)" >
+          <input ngModel name="confirmCode" type="password" placeholder="confirm code"/>
+          <div class="text-center">
+              <button class="btn-rounded-green" type="submit">{{confirmCodeButtonText}}</button>
+          </div>
+          <div class="text-danger text-center m-t-10 form-error-message">{{confirmCodeErrorText}}</div>
+        </form>
+  
+        <div class="text-center">
+          <a [routerLink]="['/login']">Login</a>
+        </div>      
+      </div>
+
+      <div id="forgot">
+        <a href="">Forgot Username or Password?</a>
+      </div>
+
+
+
+
+  </div>

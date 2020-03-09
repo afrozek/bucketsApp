@@ -1,0 +1,21 @@
+<div id="login-page">
+    <div id="auth-form" class="floating-form-container">
+      <h1>Login</h1>
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+        <input ngModel name="email" type="text" placeholder="email" onChange={this.validateFields} />
+        <input ngModel name="password" type="password" placeholder="password"/>
+        <div class="text-center">
+            <button class="btn-rounded-green" type="submit">{{loginButtonText}}</button>
+        </div>
+        <div class="text-danger text-center m-t-10 form-error-message">Error</div>
+      </form>
+
+      <div class="text-center">
+        <a [routerLink]="['/signup']">Sign Up</a>
+      </div>
+      
+    </div>
+    <div id="forgot">
+      <a href="" >Forgot Username or Password?</a>
+    </div>
+  </div>

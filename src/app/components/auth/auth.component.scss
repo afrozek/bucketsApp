@@ -1,0 +1,57 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/colors.scss';
+
+#auth-page {
+    background: $light-green;
+    height: 100%;
+
+    #buckets-logo {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    position: relative;
+    left: -10px;
+    /* top: 100px; */
+    display: inline-block;
+    max-width: 200px;
+    
+    }
+} // end auth page
+.floating-form-container {
+    background: white;
+    max-width: 350px;
+    border-radius: 6px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 60px 0px #b8dcac;
+    padding: 20px;
+}
+
+#auth-form {
+    h1 {
+        text-align: center;
+        color: $primary-green;
+        font-family: "Montserrat-SemiBold";
+    }
+    input[type="text"],
+    input[type="password"] {
+        margin: 35px auto;
+        width: 100%;
+        max-width: 240px;
+        border: 0;
+        border-bottom: 2px solid $primary-green;
+        opacity: .5;
+        transition: opacity .3s;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            outline: 0;
+        }
+    }
+}
+
+#forgot {
+    margin-top: 20px;
+    text-align: center;
+    a {
+        color: $primary-green;
+    }
+}
