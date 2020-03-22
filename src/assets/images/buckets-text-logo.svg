@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 158 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-5842.81,-1692.14)">
+        <g transform="matrix(0.853102,0,0,1,4596.39,1679.74)">
+            <g id="buckets-text-logo">
+                <g transform="matrix(0.747066,0,0,0.336822,981.244,-4.86367)">
+                    <g transform="matrix(1,0,0,1.89217,1.13687e-13,-61.6782)">
+                        <text x="710.208px" y="104.749px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:48px;fill:none;">b<tspan x="739.776px 768.096px 793.632px 819.792px 847.056px 865.776px " y="104.749px 104.749px 104.749px 104.749px 104.749px 104.749px ">uckets</tspan></text>
+                    </g>
+                    <g transform="matrix(1,0,0,1.89217,1.13687e-13,-61.6782)">
+                        <text x="710.208px" y="104.749px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:48px;fill:rgb(27,187,60);">b<tspan x="739.776px 768.096px 793.632px 819.792px 847.056px 865.776px " y="104.749px 104.749px 104.749px 104.749px 104.749px 104.749px ">uckets</tspan></text>
+                    </g>
+                </g>
+                <g id="logo" transform="matrix(0.159173,0,0,0.143241,1320.5,-59.1035)">
+                    <g transform="matrix(3.0173,0,0,2.82449,-1739.64,-642.367)">
+                        <path d="M954.233,407.925L869.189,408.137C869.189,408.137 879.165,469.959 881.641,482.968C881.892,484.284 882.13,485.679 884.046,486.188C913.844,489.705 939.661,486.24 939.871,486.188C941.559,485.767 942.212,483.234 942.212,483.234L954.233,407.925Z" style="fill:rgb(59,152,247);"/>
+                        <clipPath id="_clip1">
+                            <path d="M954.233,407.925L869.189,408.137C869.189,408.137 879.165,469.959 881.641,482.968C881.892,484.284 882.13,485.679 884.046,486.188C913.844,489.705 939.661,486.24 939.871,486.188C941.559,485.767 942.212,483.234 942.212,483.234L954.233,407.925Z"/>
+                        </clipPath>
+                        <g clip-path="url(#_clip1)">
+                            <g transform="matrix(0.934605,0,0,0.946473,105.138,157.717)">
+                                <rect x="785.098" y="237.537" width="154.375" height="136.285" style="fill:rgb(60,224,94);"/>
+                            </g>
+                            <g transform="matrix(0.931204,0,0,0.946473,114.531,158.36)">
+                                <path d="M825.63,235.271C831.385,215.308 742.609,257.759 742.609,257.759L778.266,365.478L856.1,362.646C856.1,362.646 808.922,293.224 825.63,235.271Z" style="fill:rgb(0,30,60);fill-opacity:0.054902;"/>
+                            </g>
+                            <g transform="matrix(0.934605,0,0,0.946473,101.399,152.038)">
+                                <circle cx="868.851" cy="311.174" r="19.922" style="fill:rgb(0,103,51);"/>
+                            </g>
+                            <g transform="matrix(1.81721,0,0,1.84029,-699.905,-231.607)">
+                                <text x="883.038px" y="373.358px" style="font-family:'Raleway-ExtraBold', 'Raleway', sans-serif;font-weight:800;font-size:14px;fill:rgb(32,255,78);">$</text>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(2.27327,0,0,0.671394,-1078.69,246.202)">
+                        <g transform="matrix(3.2395,-0,-0,10.3981,862.922,376.77)">
+                            <use xlink:href="#_Image2" x="0.054" y="0" width="34.72px" height="3.656px" transform="matrix(0.99201,0,0,0.914066,0,0)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="35px" height="4px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAECAYAAAAEcIbXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA9klEQVQokb2OS04CQRRFz+uq6kaEQOgoA/yFmQN34BLYiLtwS35inDlz4gKcEX9MJE2aIB2hqngOMLADbnJyz51dUVUA4mqlb6Mxr8MvhqNvinJGUf4wma67mM74XXiWPqwJAe8DSx8JMWKNIXUG5yyptaRuTS1z5K0mebtB57/zdpN+75Dz/hFnvQNMkgiAXN8/6OPNC58fY4KP7DouNXSPcy4HF9jbxR1VlrLXqKFedn5GnFLVpzybJ2zrtCPZ1TsoqqVDJxnMUrQy6NygVbJxgqBRYAPbbRQxCgYwut1Wkf2I1CNSX22940m6S5K2hwTJ5if8AZ+CdIYu2oZEAAAAAElFTkSuQmCC"/>
+    </defs>
+</svg>

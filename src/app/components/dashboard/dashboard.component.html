@@ -1,45 +1,25 @@
 <div id="dashboard-page" class="container-fluid d-flex" >
-    <div class="row flex-fill p-t-10">
-      <div class="col-md-2 p-t-10">
-      
+    <div class="row flex-fill">
+      <div id="left-nav-container" class="p-t-10">
+      <div id="logo-container">
         <img
           id="buckets-logo"
-          src="/assets/images/logoBuckets.svg"
+          src="/assets/images/buckets-text-logo.svg"
           alt="buckets logo"
-          class="buckets-logo-6x"
+          class="buckets-logo-7x"
         />
+      </div>
+        
 
         <div class="sidebar-container">
             <ul class="sidebar-nav">
-                <li>
+                <li *ngFor="let item of navItems">
                     <a href="">
-                        <span class="icon-placeholder"></span>
-                        <span class="nav-text">Home</span>
+                        <span class="icon-container">
+                          <img src="{{item.iconPath}}" alt="{{item.displayText}}">
+                        </span>
+                        <span class="nav-text">{{item.displayText}}</span>
                     </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Accounts</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Budgets</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Transactions</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Reports</span>
-                </a>
                 </li>
             </ul>
         </div>
@@ -47,7 +27,7 @@
         
         
       </div>
-      <div class="col-md-10">
+      <div id="dash-body-container">
           <!-- Start Top Nav   -->
         <nav id="top-nav-fixed" class="navbar navbar-expand-lg navbar-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

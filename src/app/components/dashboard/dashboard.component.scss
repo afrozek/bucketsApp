@@ -9,10 +9,22 @@
     height: 100%;
 }
 
-#dashboard-page .buckets-logo-6x {
-    width: $img-6x;
-    display: inline-block;
-    padding-left: 15px;
+#logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid $light-gray;
+}
+
+#dashboard-page .buckets-logo-7x {
+    width: 160px;
+    padding: 15px 0px;
+    position: relative;
+    left: -10px;
+    // display: inline-block;
+
+    // padding-left: 15px;
     // margin: 0 auto;
     // display: block;
 }
@@ -76,19 +88,52 @@
     
 }
 
+#left-nav-container {
+    background: white;
+    width: 280px;
+    box-shadow: 0px 1px 6px 0px $pale-grey-green;
+}
+
+#dash-body-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.sidebar-container {
+    display: flex;
+    justify-content: center;
+}
 
 .sidebar-nav {
     list-style: none;
     margin-top: 30px;
-    padding-left: 15px;
+    padding: 0px;
+    text-align: left;
+    flex-grow: 1;
+    max-width: 190px;
+
+    // padding-left: 15px;
 
     li {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     li a {
+        font-family: "montserrat-semibold";
+        font-size: 12px;
+        letter-spacing: .3px;
         color: $primary-green;
         display: flex;
         align-items: center;
+        padding: 5px 2px;
+        border-radius: 10px;        
+        transition: .2s;
+        text-decoration: none;
+
+        &:hover {
+            background: #B9F7AD;
+            color: $dark-green-2;          
+        }
     }
 
     .icon-small {
@@ -106,14 +151,21 @@
         }
     }
 
-    .icon-placeholder {
-        background: #A3FBAA;
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
+    .icon-container {
+        background: $light-green-2;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 6px;
         margin: 0px 8px 0px 4px;
-        display: inline-block;
         position: relative;
+        align-items: center;
+
+        img {
+            height: 15px;
+            width: auto;
+        }
     }
 
     .nav-text {
