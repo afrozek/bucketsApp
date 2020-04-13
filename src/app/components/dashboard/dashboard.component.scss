@@ -18,7 +18,7 @@
 }
 
 #dashboard-page .buckets-logo-7x {
-    width: 160px;
+    width: 150px;
     padding: 15px 0px;
     position: relative;
     left: -10px;
@@ -89,9 +89,10 @@
 }
 
 #left-nav-container {
-    background: white;
     width: 280px;
-    box-shadow: 0px 1px 6px 0px $pale-grey-green;
+    box-shadow: 0px 1px 20px 0px #d9e0dc;
+    background: linear-gradient( #00E418, #90FFA8);
+
 }
 
 #dash-body-container {
@@ -116,23 +117,29 @@
     // padding-left: 15px;
 
     li {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     li a {
         font-family: "montserrat-semibold";
         font-size: 12px;
         letter-spacing: .3px;
-        color: $primary-green;
+        color: rgba(255, 255, 255, 0.85);
         display: flex;
         align-items: center;
         padding: 5px 2px;
         border-radius: 10px;        
-        transition: .2s;
+        transition: .3s;
         text-decoration: none;
+        // opacity: 0.7;
 
         &:hover {
-            background: #B9F7AD;
-            color: $dark-green-2;          
+            background:white;
+            color: $dark-green-2;  
+            opacity: 1;
+            
+            .icon-container {
+                background: $light-green-2;
+            }
         }
     }
 
@@ -152,7 +159,6 @@
     }
 
     .icon-container {
-        background: $light-green-2;
         display: flex;
         justify-content: center;
         height: 30px;
@@ -161,6 +167,8 @@
         margin: 0px 8px 0px 4px;
         position: relative;
         align-items: center;
+        background: rgba(237, 255, 241, 0.32);
+        transition: .3s;
 
         img {
             height: 15px;
