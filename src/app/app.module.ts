@@ -10,6 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardSidebarComponent } from './components/dashboard/components/dashboard-sidebar/dashboard-sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    DashboardSidebarComponent
+    DashboardSidebarComponent,
+    TransactionsComponent
   ],
   imports: [
     BrowserModule,

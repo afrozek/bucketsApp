@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransactionsService } from 'app/services/transactions.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   navItems: { displayText: string; iconPath: string; anchorLink: string; }[];
 
-  constructor() { }
+  constructor(private transactionsService: TransactionsService) { }
 
   ngOnInit() {
     this.initNav();
+    this.getTransactions();
   }
 
   initNav() {
@@ -32,6 +34,12 @@ export class DashboardComponent implements OnInit {
         anchorLink: ""
       }
     ]
+  }
+
+  getTransactions() {
+    let transactions = this.transactionsService.getTransactions().subscribe(data => {
+      console.log("transactions:", data);
+    })
   }
 
 }
