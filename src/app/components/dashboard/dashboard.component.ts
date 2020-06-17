@@ -8,6 +8,7 @@ import { TransactionsService } from 'app/services/transactions.service';
 })
 export class DashboardComponent implements OnInit {
   navItems: { displayText: string; iconPath: string; anchorLink: string; }[];
+  transactions: any;
 
   constructor(private transactionsService: TransactionsService) { }
 
@@ -39,6 +40,7 @@ export class DashboardComponent implements OnInit {
   getTransactions() {
     let transactions = this.transactionsService.getTransactions().subscribe(data => {
       console.log("transactions:", data);
+      this.transactions = data;
     })
   }
 
