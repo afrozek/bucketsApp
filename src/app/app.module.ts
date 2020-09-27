@@ -11,6 +11,8 @@ import { DashboardSidebarComponent } from './components/dashboard/components/das
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TransactionsComponent } from './components/transactions/transactions.component';
+import { GoogleChartsModule } from 'angular-google-charts';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { TransactionsComponent } from './components/transactions/transactions.co
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
