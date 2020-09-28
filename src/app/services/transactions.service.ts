@@ -11,20 +11,21 @@ export class TransactionsService {
 
   constructor() { }
 
-  getTransactions() {
+  getTransactions(dateRange) {
+    let to;
+    let from;
+    if(dateRange) {
+       from = new Date(dateRange.from.year, dateRange.from.month - 1, dateRange.from.day);
+       to = new Date(dateRange.to.year, dateRange.to.month - 1, dateRange.to.day);
+      }
 
     let transactionsWithDateObject = transactions.map(trans => {
       trans.dateObj = new Date(trans.date);
       return trans;
     })
-
-    let dateRange = {
-      start: new Date("2020-1-1"),
-      end: new Date("2020-1-30")
-    }
-
+   
     transactionsWithDateObject = transactionsWithDateObject.filter(trans => {
-      return trans.dateObj >= dateRange.start && trans.dateObj <= dateRange.end;
+      return trans.dateObj >= from && trans.dateObj <= to;
     })
 
 

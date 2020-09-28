@@ -67,7 +67,7 @@ export class DatepickerRangeComponent {
     if(this.toDate && this.fromDate) {
       this.myDrop.close();
       console.log("selected")
-      this.dateSelected.emit({from: this.toDate, to: this.toDate})
+      this.dateSelected.emit({from: this.fromDate, to: this.toDate})
     }
   }
 

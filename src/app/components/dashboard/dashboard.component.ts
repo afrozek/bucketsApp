@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.initNav();
-    this.getTransactions();
+    // this.getTransactions();
   }
 
   initNav() {
@@ -49,11 +49,12 @@ export class DashboardComponent implements OnInit {
   }
 
   dateSelected(date) {
-    console.log("date selected ", date)
+    console.log("date selected ", date);
+    this.getTransactions(date)
   }
 
-  getTransactions() {
-    let transactions = this.transactionsService.getTransactions().subscribe(data => {
+  getTransactions(dateRange) {
+    let transactions = this.transactionsService.getTransactions(dateRange).subscribe(data => {
       // console.log("transactions:", data);
       this.transactions = data;
       
