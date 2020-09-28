@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Output, ViewChild} from '@angular/core';
 import {NgbDate, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -42,6 +42,7 @@ import {NgbDate, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 })
 export class DatepickerRangeComponent {
   @ViewChild('myDrop') myDrop;
+  @Output() dateSelected: EventEmitter<any> = new EventEmitter();
 
   hoveredDate: NgbDate | null = null;
 
@@ -65,6 +66,8 @@ export class DatepickerRangeComponent {
 
     if(this.toDate && this.fromDate) {
       this.myDrop.close();
+      console.log("selected")
+      this.dateSelected.emit({from: this.toDate, to: this.toDate})
     }
   }
 

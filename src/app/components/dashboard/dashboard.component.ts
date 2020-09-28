@@ -48,6 +48,10 @@ export class DashboardComponent implements OnInit {
     ];
   }
 
+  dateSelected(date) {
+    console.log("date selected ", date)
+  }
+
   getTransactions() {
     let transactions = this.transactionsService.getTransactions().subscribe(data => {
       // console.log("transactions:", data);
