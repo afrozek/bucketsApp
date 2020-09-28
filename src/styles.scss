@@ -54,3 +54,5 @@ a {
     background: linear-gradient(135deg, $primary-green 0%, $vibrant-green 100%);
     display: inline-block;
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

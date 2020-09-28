@@ -103,57 +103,7 @@
 
             <!-- table -->
 
-            <div class="row p-t-30">
-              <div class="col-md-12">
-                <div class="dash-card">
-                  <div class="dash-card-header">
-                    <div class="title-container">
-                      <img class="icon" src="/assets/images/wallet-icon.svg" alt="overview" >
-                      <h2 class="title">Transactions</h2>
-                    </div>  
-                    <div class="options-bar-container justify-content-end">
-                      <ul class="options-list">
-                        <li><button class="options-button">options</button></li>
-                        <li><button class="options-button">options</button></li>
-                        <li><button class="options-button">options</button></li>
-                      </ul>
-                    </div>                  
-                  </div>
-                  <div class="dash-card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
 
             <!-- MockData -->
 
@@ -169,29 +119,39 @@
                       <ul class="options-list">
                         <li><button class="options-button">options</button></li>
                         <li><button class="options-button">options</button></li>
-                        <li><button class="options-button">options</button></li>
+                        <li><ngbd-datepicker-range></ngbd-datepicker-range></li>
                       </ul>
+                      <!--  -->
+                      
+                      
+                      
+
+                      <!--  -->
                     </div>                  
                   </div>
                   <div class="dash-card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>  
-                          <th scope="col">#</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Payee</th>
-                          <th scope="col">Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr *ngFor="let trans of transactions">
-                          <th scope="row">1</th>
-                          <td>{{trans.date}}</td>
-                          <td>{{trans.name}}</td>
-                          <td>{{trans.amount}}</td>
-                        </tr>                        
-                      </tbody>
-                    </table>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>  
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Payee</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let trans of transactions">
+                            <th scope="row">1</th>
+                            <td>{{trans.date}}</td>
+                            <td>{{trans.name}}</td>
+                            <td>{{trans.amount}}</td>
+                            <td>{{trans.category}}</td>
+                          </tr>                        
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>

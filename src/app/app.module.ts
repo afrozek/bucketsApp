@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TransactionsComponent } from './components/transactions/transactions.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatepickerRangeComponent } from './components/datepicker-range/datepicker-range.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { GoogleChartsModule } from 'angular-google-charts';
     SignupComponent,
     DashboardComponent,
     DashboardSidebarComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    DatepickerRangeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
