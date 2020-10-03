@@ -1,0 +1,29 @@
+
+<div ngbDropdown class="d-inline-block " #myDrop="ngbDropdown">
+    <button class="options-button" id="dropdownBasic1" ngbDropdownToggle>Date</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <!-- <button ngbDropdownItem>Action - 1</button>
+      <button ngbDropdownItem>Another Action</button>
+      <button ngbDropdownItem>Something else is here</button> -->
+      <ngb-datepicker #dp (dateSelect)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t" outsideDays="hidden">
+    </ngb-datepicker>
+    </div>
+  </div>
+
+
+
+<ng-template #t let-date let-focused="focused">
+  <span class="custom-day"
+        [class.focused]="focused"
+        [class.range]="isRange(date)"
+        [class.faded]="isHovered(date) || isInside(date)"
+        (mouseenter)="hoveredDate = date"
+        (mouseleave)="hoveredDate = null">
+    {{ date.day }}
+  </span>
+</ng-template>
+
+<!-- <hr>
+
+<pre>From: {{ fromDate | json }} </pre>
+<pre>To: {{ toDate | json }} </pre> -->

@@ -10,6 +10,11 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardSidebarComponent } from './components/dashboard/components/dashboard-sidebar/dashboard-sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TransactionsComponent } from './components/transactions/transactions.component';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatepickerRangeComponent } from './components/datepicker-range/datepicker-range.component';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +23,17 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    DashboardSidebarComponent
+    DashboardSidebarComponent,
+    TransactionsComponent,
+    DatepickerRangeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

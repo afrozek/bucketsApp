@@ -1,45 +1,25 @@
 <div id="dashboard-page" class="container-fluid d-flex" >
-    <div class="row flex-fill p-t-10">
-      <div class="col-md-2 p-t-10">
-      
+    <div class="row flex-fill">
+      <div id="left-nav-container" class="p-t-10">
+      <div id="logo-container">
         <img
           id="buckets-logo"
-          src="/assets/images/logoBuckets.svg"
+          src="/assets/images/buckets-white-text-logo.svg"
           alt="buckets logo"
-          class="buckets-logo-6x"
+          class="buckets-logo-7x"
         />
+      </div>
+        
 
         <div class="sidebar-container">
             <ul class="sidebar-nav">
-                <li>
+                <li *ngFor="let item of navItems">
                     <a href="">
-                        <span class="icon-placeholder"></span>
-                        <span class="nav-text">Home</span>
+                        <span class="icon-container">
+                          <img src="{{item.iconPath}}" alt="{{item.displayText}}">
+                        </span>
+                        <span class="nav-text">{{item.displayText}}</span>
                     </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Accounts</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Budgets</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Transactions</span>
-                </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span class="icon-placeholder"></span>
-                    <span class="nav-text">Reports</span>
-                </a>
                 </li>
             </ul>
         </div>
@@ -47,7 +27,7 @@
         
         
       </div>
-      <div class="col-md-10">
+      <div id="dash-body-container">
           <!-- Start Top Nav   -->
         <nav id="top-nav-fixed" class="navbar navbar-expand-lg navbar-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,6 +93,8 @@
                   </div>
                   <div class="dash-card-body">
                     dash body
+                    <google-chart [data]="overviewChartData" [type]="'PieChart'"></google-chart>
+
                   </div>
                 </div>
               </div>
@@ -120,6 +102,10 @@
 
 
             <!-- table -->
+
+          
+
+            <!-- MockData -->
 
             <div class="row p-t-30">
               <div class="col-md-12">
@@ -133,16 +119,44 @@
                       <ul class="options-list">
                         <li><button class="options-button">options</button></li>
                         <li><button class="options-button">options</button></li>
-                        <li><button class="options-button">options</button></li>
+                        <li><ngbd-datepicker-range (dateSelected)="dateSelected($event)"></ngbd-datepicker-range></li>
                       </ul>
+                      <!--  -->
+                      
+                      
+                      
+
+                      <!--  -->
                     </div>                  
                   </div>
                   <div class="dash-card-body">
-                    dash body
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>  
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Payee</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let trans of transactions">
+                            <th scope="row">1</th>
+                            <td>{{trans.date}}</td>
+                            <td>{{trans.name}}</td>
+                            <td>{{trans.amount}}</td>
+                            <td>{{trans.category}}</td>
+                          </tr>                        
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- end MockData -->
 
             <!-- table -->
 

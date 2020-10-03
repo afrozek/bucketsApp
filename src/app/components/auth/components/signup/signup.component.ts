@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 
 })
 export class SignupComponent implements OnInit {
-  @ViewChild('signupForm',{static: false}) signupForm: NgForm;
-  @ViewChild('confirmCodeForm',{static: false}) confirmCodeForm: NgForm;
+  @ViewChild('signupForm') signupForm: NgForm;
+  @ViewChild('confirmCodeForm') confirmCodeForm: NgForm;
 
   signupButtonText: string;
   signupErrorText: string;
