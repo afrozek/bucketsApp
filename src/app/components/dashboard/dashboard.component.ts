@@ -12,7 +12,7 @@ export class DashboardComponent implements OnInit {
   transactions: any;
   myData: any[];
   overviewChartData: any[][];
-  slimNav: boolean;
+  slimNav: boolean = true;
 
   constructor(private transactionsService: TransactionsService) { }
 
