@@ -1,6 +1,7 @@
 <div id="dashboard-page" class="container-fluid d-flex" >
     <div class="row flex-fill">
-      <div id="left-nav-container" class="p-t-10">
+      <div [ngClass]="slimNav ? 'left-nav-container p-t-10 left-nav-slim' : 'left-nav-container p-t-10'">
+        <span id="nav-slim-toggle-btn" (click)="toggleNav()"></span>
       <div id="logo-container">
         <img
           id="buckets-logo"

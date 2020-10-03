@@ -91,11 +91,46 @@ table {
 
 }
 
-#left-nav-container {
+.left-nav-container {
+    transition: .3s;
     width: 280px;
     box-shadow: 0px 1px 20px 0px #d9e0dc;
     background: linear-gradient(#00E418, #90FFA8);
+    position: relative;
 
+    #nav-slim-toggle-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: white;
+        box-shadow: 0px 1px 20px 0px #d9e0dc;
+        top: 100px;
+        right: -15px;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            
+            transform: scale(1.1);
+            box-shadow: 0px 1px 10px 0px #d9e0dc;
+
+        }
+    }
+
+}
+
+.left-nav-slim {
+    transition: .3s;
+    width: 70px;
+
+    .sidebar-nav .nav-text {
+        display: none;
+    }
+
+    .sidebar-nav li {
+        justify-content: center;
+        display: flex;
+    }
 }
 
 #dash-body-container {

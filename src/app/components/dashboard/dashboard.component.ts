@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
   transactions: any;
   myData: any[];
   overviewChartData: any[][];
+  slimNav: boolean;
 
   constructor(private transactionsService: TransactionsService) { }
 
@@ -46,6 +47,10 @@ export class DashboardComponent implements OnInit {
       ['Berlin', 30],
       ['Kairo', 35],
     ];
+  }
+
+  toggleNav() {
+    this.slimNav = !this.slimNav;
   }
 
   dateSelected(date) {
