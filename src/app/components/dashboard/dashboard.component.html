@@ -127,38 +127,11 @@
                         <li><button class="options-button">options</button></li>
                         <li><button class="options-button">options</button></li>
                         <li><ngbd-datepicker-range (dateSelected)="dateSelected($event)"></ngbd-datepicker-range></li>
-                      </ul>
-                      <!--  -->
-                      
-                      
-                      
-
-                      <!--  -->
+                      </ul>         
                     </div>                  
                   </div>
                   <div class="dash-card-body">
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>  
-                            <th scope="col">#</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Payee</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Category</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr *ngFor="let trans of transactions">
-                            <th scope="row">1</th>
-                            <td>{{trans.date}}</td>
-                            <td>{{trans.name}}</td>
-                            <td>{{trans.amount}}</td>
-                            <td>{{trans.category}}</td>
-                          </tr>                        
-                        </tbody>
-                      </table>
-                    </div>
+                    <transactions [transactions]="transactions"></transactions>
                   </div>
                 </div>
               </div>
