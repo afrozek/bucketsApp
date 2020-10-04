@@ -2,16 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { TransactionsService } from 'app/services/transactions.service';
 import { groupBy } from 'lodash';
 
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  faArrowLeft = faArrowLeft;
   navItems: { displayText: string; iconPath: string; anchorLink: string; }[];
   transactions: any;
   myData: any[];
   overviewChartData: any[][];
+  slimNav: boolean = true;
 
   constructor(private transactionsService: TransactionsService) { }
 
@@ -46,6 +50,10 @@ export class DashboardComponent implements OnInit {
       ['Berlin', 30],
       ['Kairo', 35],
     ];
+  }
+
+  toggleNav() {
+    this.slimNav = !this.slimNav;
   }
 
   dateSelected(date) {

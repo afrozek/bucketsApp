@@ -14,6 +14,7 @@ import { TransactionsComponent } from './components/transactions/transactions.co
 import { GoogleChartsModule } from 'angular-google-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatepickerRangeComponent } from './components/datepicker-range/datepicker-range.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { DatepickerRangeComponent } from './components/datepicker-range/datepick
     FormsModule,
     HttpClientModule,
     GoogleChartsModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,19 @@
 <div id="dashboard-page" class="container-fluid d-flex" >
     <div class="row flex-fill">
-      <div id="left-nav-container" class="p-t-10">
+      <div [ngClass]="slimNav ? 'left-nav-container p-t-10 left-nav-slim' : 'left-nav-container p-t-10'">
+        <span id="nav-slim-toggle-btn" (click)="toggleNav()"><fa-icon [icon]="faArrowLeft"></fa-icon>
+        </span>
       <div id="logo-container">
-        <img
+        <img *ngIf="!slimNav"
           id="buckets-logo"
           src="/assets/images/buckets-white-text-logo.svg"
           alt="buckets logo"
           class="buckets-logo-7x"
+        />
+        <img *ngIf="slimNav"
+          src="/assets/images/buckets-white-logo.png"
+          alt="buckets logo"
+          class="logo-without-text"
         />
       </div>
         
