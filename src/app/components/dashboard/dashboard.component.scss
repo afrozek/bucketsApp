@@ -130,7 +130,7 @@ table {
     }
 
     fa-icon {
-        transition: .6s;
+        transition: rotate .6s;
     }
 
     
@@ -141,12 +141,12 @@ table {
 
 
 .left-nav-slim {
-    transition: .6s;
+    
     width: 70px;
 
     fa-icon {
-        transform: rotate(180deg);
-        transition: .3s;
+        transition: rotate .6s;
+        transform: rotate(180deg);        
     }
     
 
